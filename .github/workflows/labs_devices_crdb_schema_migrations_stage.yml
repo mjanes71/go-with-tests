@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - '**'
+    paths: 
+      - '.github/workflows/labs_devices_crdb_schema_migrations_stage.yml'
       
 jobs:
   build:
