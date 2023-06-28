@@ -23,7 +23,5 @@ jobs:
     environment: stage
     steps:
       - name: say stage
-        run: echo environment is stage
-
-      
+        run: echo environment is stage    
   
