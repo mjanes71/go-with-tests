@@ -2,15 +2,11 @@ name: Devices CRDB Schema Migrations Stage
 
 on:
   push:
+    tags-ignore:
+    - "*-labs-devices-ent"
     # paths:
     #   - '.github/workflows/labs_devices_crdb_schema_migrations_stage.yml'
-    tags-ignore:
-      # - "*"
-      - '*-labs-devices*'
-      - '*-labs-workflows*'
-      - '*-oralb*'
       
-
 jobs:
   build:
     name: Build
