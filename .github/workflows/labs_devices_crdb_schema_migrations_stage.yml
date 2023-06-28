@@ -1,0 +1,29 @@
+name: Devices CRDB Schema Migrations Stage
+
+on:
+  push:
+    paths:
+      - '.github/workflows/labs_devices_crdb_schema_migrations_stage.yml'
+    # tags-ignore:
+    #   - "*"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Print me
+        run: echo you got your codes ya hacker
+  deploy-stage:
+    name: stage
+    runs-on: ubuntu-latest
+    needs: build
+    environment: stage
+    steps:
+      - name: say stage
+        run: echo environment is stage
+
+      
+  
