@@ -5,7 +5,7 @@ on:
     paths:
       - '.github/workflows/labs_devices_crdb_schema_migrations_stage.yml'
     tags-ignore:
-      - v*.*
+      - v1.**
       
 jobs:
   build:
