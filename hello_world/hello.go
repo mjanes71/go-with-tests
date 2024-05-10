@@ -2,15 +2,19 @@ package main
 
 import "fmt"
 
-const englishHelloPrefix = "Hello, "
-const spanishHelloPrefix = "Hola, "
-const frenchHelloPrefix = "Bonjour, "
+// common to group constants and leave a line between related groups
+const (
+
+	englishHelloPrefix = "Hello, "
+	spanishHelloPrefix = "Hola, "
+	frenchHelloPrefix  = "Bonjour, "
+)
 
 func main() {
-	fmt.Println(hello("Megan", "English"))
+	fmt.Println(Hello("Megan", "English"))
 }
 
-func hello(name, language string) string {
+func Hello(name, language string) string {
 	if name == "" {
 		name = "World"
 	}
